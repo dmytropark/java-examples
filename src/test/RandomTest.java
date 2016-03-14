@@ -1,11 +1,9 @@
+import com.parkhomenko.random.CustomGenerator;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 
 import java.security.SecureRandom;
-import java.util.List;
-import java.util.Random;
-import java.util.OptionalInt;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
@@ -123,4 +121,20 @@ public class RandomTest {
         System.out.println("Test name: generate_random_code, result:");
         System.out.println(code);
     }
+
+    @Test
+    public void custom_generator_unique_code() {
+        final int CODE_LENGTH = 7;
+        Random random = new Random();
+        IntStream intStream = random.ints(1000000, 10000000).limit(10);
+        Set<String> set = intStream.mapToObj(String::valueOf).collect(Collectors.toSet());
+        CustomGenerator<String> generator = new CustomGenerator<>();
+        String uniqueCode = generator.generateUniqueCode(() -> RandomStringUtils.randomNumeric(CODE_LENGTH), set::contains);
+
+        assertTrue(!uniqueCode.isEmpty());
+
+        System.out.println("custom_generator_unique_code");
+        System.out.println(uniqueCode);
+    }
+
 }
