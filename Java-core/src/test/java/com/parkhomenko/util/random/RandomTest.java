@@ -1,4 +1,5 @@
-import com.parkhomenko.random.CustomGenerator;
+package com.parkhomenko.util.random;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 

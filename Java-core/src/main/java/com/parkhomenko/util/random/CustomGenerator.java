@@ -1,4 +1,4 @@
-package com.parkhomenko.random;
+package com.parkhomenko.util.random;
 
 import java.util.function.Predicate;
 import java.util.function.Supplier;
