@@ -23,10 +23,10 @@ public class Y extends X {
         //downcast in action
         ((Y) x).do2();
 
-//        x.test();
-//        ((X)y).test();
-//        y = (Y) x;
-//        y.do2();
+//        wallHeight.test();
+//        ((X)waterLevel).test();
+//        waterLevel = (Y) wallHeight;
+//        waterLevel.do2();
 //        Y y1 = (Y) x1;
 //        y1.do2();
 //        X x1 = new X();

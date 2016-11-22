@@ -14,8 +14,8 @@ public class IterationArrayListTester {
 //        Iterator<Integer> itr = list.iterator();
 //
 //        while(itr.hasNext()) {
-//            int curr = itr.next();
-//            if(curr == 1) {
+//            int currHead = itr.next();
+//            if(currHead == 1) {
 //                itr.remove();
 //            }
 //        }
@@ -28,8 +28,8 @@ public class IterationArrayListTester {
 //        Iterator<Integer> itr1 = list1.listIterator();
 //
 //        while(itr1.hasNext()) {
-//            int curr = itr1.next();
-//            if(curr == 1) {
+//            int currHead = itr1.next();
+//            if(currHead == 1) {
 //                itr1.remove();
 //            }
 //        }
@@ -41,8 +41,8 @@ public class IterationArrayListTester {
 //        List<Integer> list2 = new ArrayList<>(Arrays.asList(0, 1, 2, 3));
 //        Iterator<Integer> itr2 = list2.listIterator();
 //        while(itr2.hasNext()) {
-//            int curr = itr2.next();
-//            if(curr == 1) {
+//            int currHead = itr2.next();
+//            if(currHead == 1) {
 //                list2.remove(0);
 //            }
 //        }
