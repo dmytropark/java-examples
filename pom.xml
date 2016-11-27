@@ -9,6 +9,7 @@
     <module>Spring-mvc-framework</module>
     <module>Spring-core-framework</module>
     <module>Java-core</module>
+    <module>Spring-boot-framework</module>
   </modules>
   <name>Java examples</name>
 
