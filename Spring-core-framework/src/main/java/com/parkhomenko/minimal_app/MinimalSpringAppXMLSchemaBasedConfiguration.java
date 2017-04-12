@@ -20,7 +20,7 @@ public class MinimalSpringAppXMLSchemaBasedConfiguration {
     }
 
     public static void main(final String[] args) {
-        final ApplicationContext context = new ClassPathXmlApplicationContext("minimal-app-application-config.xml");
+        final ApplicationContext context = new ClassPathXmlApplicationContext("minimal-xapp-application-config.xml");
         final MinimalSpringAppXMLSchemaBasedConfiguration bean = context.getBean(MinimalSpringAppXMLSchemaBasedConfiguration.class);
         bean.sayHello();
     }

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tokens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Token serial="AJ097968">
+      <CaseModel>5</CaseModel>
+      <Model>6.2</Model>
+      <ProductionDate>06/21/2013</ProductionDate>
+      <ProductName>eToken-PASS-ES</ProductName>
+      <Applications>
+         <Application ConnectorID="{a61c4073-2fc8-4170-99d1-9f5b70a2cec6}">
+            <Seed>10EA79D81AA7F124C650B2EE91CC529A7E391F9D</Seed>
+            <MovingFactor>10</MovingFactor>
+         </Application>
+      </Applications>
+   </Token>
+</Tokens>
