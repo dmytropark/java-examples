@@ -1,4 +1,4 @@
-package com.parkhomenko.validation;
+package com.parkhomenko;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

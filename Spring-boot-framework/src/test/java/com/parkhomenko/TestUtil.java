@@ -1,4 +1,4 @@
-package com.parkhomenko.validation;
+package com.parkhomenko;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
