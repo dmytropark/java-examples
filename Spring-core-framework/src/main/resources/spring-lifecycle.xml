@@ -6,14 +6,15 @@
     <!-- Not initializing employee name variable-->
     <bean name="employee" class="com.parkhomenko.lifecycle.Employee" />
 
-    <bean name="employeeService" class="com.parkhomenko.lifecycle.EmployeeService">
+    <bean id="employeeServiceId" name="employeeService" class="com.parkhomenko.lifecycle.EmployeeService"
+        init-method="init" destroy-method="customDestroy">
         <property name="employee" ref="employee"></property>
     </bean>
 
-    <bean name="myEmployeeService" class="com.parkhomenko.lifecycle.MyEmployeeService"
+<!--    <bean name="myEmployeeService" class="com.parkhomenko.lifecycle.MyEmployeeService"
           init-method="init" destroy-method="destroy">
         <property name="employee" ref="employee"></property>
-    </bean>
+    </bean>-->
 
     <!-- initializing CommonAnnotationBeanPostProcessor is same as context:annotation-config -->
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
