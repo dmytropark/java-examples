@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.parkhomenko;
+package com.parkhomenko.data_structures_coding_intervirew_algorithms;
 
 import java.util.Arrays;
 import java.util.Collections;
