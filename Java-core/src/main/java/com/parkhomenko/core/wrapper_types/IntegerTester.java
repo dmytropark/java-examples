@@ -7,6 +7,8 @@ package com.parkhomenko.core.wrapper_types;
 
 public class IntegerTester {
     public static void main(String[] args) {
-//        Integer.sum()
+        Byte b1 = Byte.valueOf("11");
+        Byte b2 = Byte.valueOf("11");
+        System.out.println("!!!!Is obj's equal: " + (b1 == b2));
     }
 }

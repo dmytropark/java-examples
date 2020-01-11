@@ -11,6 +11,8 @@ public class Animal {
     private Head instanceAnimalVariable = new Head("Animal instance var");
     private static Head staticElephantVariable = new Head("Animal static var");
 
+    public final static int PORT = 24;
+
     static {
         System.out.println("Animal static init block works");
     }

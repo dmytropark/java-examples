@@ -8,12 +8,14 @@ package com.parkhomenko.core.init_blocks;
 public class Main {
 
     public static void main(String[] args) {
-        try {
-            Class.forName("com.parkhomenko.core.init_blocks.Animal");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        System.out.println("Animal.PORT = " + Animal.PORT);
 
-        Animal animal = new Animal();
+//        try {
+//            Class.forName("com.parkhomenko.core.init_blocks.Animal");
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//
+//        Animal animal = new Animal();
     }
 }

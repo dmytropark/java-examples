@@ -17,10 +17,10 @@ import org.junit.Test;
 
 public class Item1 {
     @Test
-    public void test_1() {
-        Random rnd = new Random();
-        BigInteger bigInteger = new BigInteger(4, 100, rnd);
-        System.out.println("Res = " + bigInteger);
-        BigInteger.probablePrime(4, rnd);
+    public void wrapper_cache_test() {
+        Byte b1 = Byte.valueOf("11");
+        Byte b2 = Byte.valueOf("11");
+        System.out.println("Is obj's equal: " + (b1 == b2));
+        
     }
 }
