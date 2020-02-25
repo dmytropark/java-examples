@@ -3,9 +3,10 @@ package com.parkhomenko.collections;
 import org.apache.commons.lang3.ArrayUtils;
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class FindElementInArray {
     /**
@@ -65,5 +66,43 @@ public class FindElementInArray {
 
         int lastMonthInFirstQuarter = ArrayUtils.indexOf(twoQuarters, 3);
         assertEquals(2, lastMonthInFirstQuarter);
+    }
+
+    @Test
+    public void test_equals_for_set() {
+        Set<Integer> a = new HashSet<>();
+        Set<Integer> b = new HashSet<>();
+
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+
+        b.add(1);
+        b.add(2);
+        b.add(3);
+        b.add(4);
+
+        boolean equals = a.equals(b);
+        assertTrue(true);
+    }
+
+    @Test
+    public void test_containsAll_for_list() {
+        List<Integer> a = new ArrayList<>();
+        List<Integer> b = new ArrayList<>();
+
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+
+        b.add(1);
+        b.add(2);
+        b.add(3);
+        b.add(4);
+
+        boolean equals = a.containsAll(b);
+        assertTrue(true);
     }
 }
